@@ -54,6 +54,8 @@ public class AccountPage {
         String accNameText = accountNameValue.getText();
         System.out.println(accNameText);
 
+        System.out.println("Hello Account :" +accNameText);
+
         return accNameText;
 
     }
