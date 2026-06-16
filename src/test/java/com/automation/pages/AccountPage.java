@@ -54,8 +54,6 @@ public class AccountPage {
         String accNameText = accountNameValue.getText();
         System.out.println(accNameText);
 
-        
-
         return accNameText;
 
     }

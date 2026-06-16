@@ -3,6 +3,7 @@ package com.automation.tests;
 import com.automation.base.BaseTest;
 import com.automation.pages.AccountPage;
 import com.automation.pages.AppLauncherPage;
+import com.automation.pages.CommonPage;
 import com.automation.pages.sfLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,6 +26,9 @@ public class AccountTest extends BaseTest {
         boolean isPresent = acc.verifyAccountInList(accName);
 
         Assert.assertTrue(isPresent);
+
+        CommonPage common = new CommonPage(driver);
+        common.logOut();
 
         tearDown();
     }
